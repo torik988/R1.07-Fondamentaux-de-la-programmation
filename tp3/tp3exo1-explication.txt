@@ -1,0 +1,13 @@
+tab = [1, "Eh !", 3, "Oh !"] #On Définis une liste avec 4 éléments. les int et des str
+print(type(tab)) #On affiche le type de la variale tab, c'est une liste
+for val in tab : _
+    print (val)  _| #on affiche les éléments du tableau
+
+tab[3] = "Ah! " #On remplace l'élément a la 3 eme position par "Ah!"
+
+for i in range(len(tab)) : #Boucle qui se répetera le nombre d'élement dans le tableau ou i sera incrementé allant de 0 a Nb element
+    print(tab[i]) #Affiche l'élément a la position i
+    i=0 #définis la valeur de i a 0
+while i < len(tab) : # tant que i est inferieur au nb d'element du tableau ( il a pas fini ) [cette boucle renvoie tt les éléments du tab
+    print(tab[i])
+    i+=1
