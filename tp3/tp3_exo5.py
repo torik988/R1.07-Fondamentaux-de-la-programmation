@@ -12,7 +12,6 @@ elif boucle == "W":
     while i > 0:
         print(nb)
         nb =nb*i
-
         i = i - 1
 else:
     print("TYPE DE BOUCLE INVALIDE !")
