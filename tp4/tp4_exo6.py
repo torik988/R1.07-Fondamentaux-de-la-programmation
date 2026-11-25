@@ -1,19 +1,19 @@
-from os import rename
+def tri_selection(tableau):
+    n = len(tableau)
+    for i in range(n):
+        minimum = i
+        print(tableau)
+        for j in range(i + 1, n):
+            if tableau[j] < tableau[minimum]:
+                minimum = j
+        tableau[i], tableau[minimum] = tableau[minimum], tableau[i]
 
-liste= [5, 2, 4, 8, 1, 3]
-def sorted(tab):
-    pos_mini = 0
-    pos_maxi = 0
-    nb_element = 0
-    for i in liste:#trouve le mini et le maxi de la liste
-        nb_element += 1
-        if i>liste[pos_mini]:#trouve la position du mini
-            pos_mini = i-1
-        if i<liste[pos_maxi]:#trouve la position du maxi
-            pos_maxi=i-1
+    return tableau
 
-    for i in range(nb_element):
-        liste[i] = liste.pop(pos_mini)
+tab=[5, 2, 4, 8, 1, 3]
 
-
-print(sorted(liste))
+tri_selection(tab)
+"""
+2 la fonction sorted trie automatiquement dans python un tableau
+3 cela nous renvoie none, aucune info disponible
+"""
