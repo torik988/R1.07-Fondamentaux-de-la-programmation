@@ -6,7 +6,8 @@ def tri_selection(tableau):
         for j in range(i + 1, n):
             if tableau[j] < tableau[minimum]:
                 minimum = j
-        tableau[i], tableau[minimum] = tableau[minimum], tableau[i]
+        tableau[i] = tableau[minimum]
+        tableau[minimum] = tableau[i]
 
     return tableau
 
